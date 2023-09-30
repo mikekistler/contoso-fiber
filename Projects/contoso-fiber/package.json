@@ -1,0 +1,20 @@
+{
+  "name": "contoso-fiber",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsp compile .",
+    "watch": "tsp compile . --watch",
+    "lint": "spectral lint tsp-output/**/*.yaml"
+  },
+  "dependencies": {
+    "@contoso/typespec-library": "link:../../typespec-library",
+    "@typespec/compiler": "^0.48.1",
+    "@typespec/http": "^0.48.0",
+    "@typespec/openapi3": "^0.48.1",
+    "@typespec/versioning": "^0.48.0"
+  },
+  "devDependencies": {
+    "@stoplight/spectral-cli": "^6.11.0"
+  }
+}
