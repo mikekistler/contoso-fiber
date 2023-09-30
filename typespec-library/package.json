@@ -1,0 +1,26 @@
+{
+  "name": "@contoso/typespec-library",
+  "version": "1.0.0",
+  "description": "TypeSpec library for Contoso APIs",
+  "main": "dist/index.js",
+  "tspMain": "lib/main.tsp",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Contoso API Design team",
+  "license": "MIT",
+  "devDependencies": {
+    "@typespec/compiler": "^0.48.1",
+    "@typespec/http": "^0.48.0",
+    "@typespec/openapi": "^0.48.0",
+    "typescript": "^5.2.2"
+  },
+  "peerDependencies": {
+    "@typespec/compiler": "^0.48.1",
+    "@typespec/http": "^0.48.0",
+    "@typespec/openapi": "^0.48.0"
+  }
+}
