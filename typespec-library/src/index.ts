@@ -1,1 +1,1 @@
-import { myLibrary } from "./lib.js";
+export { myLibrary } from "./lib.js";

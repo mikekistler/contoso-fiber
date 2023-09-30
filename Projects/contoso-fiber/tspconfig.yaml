@@ -1,2 +1,6 @@
 emit:
-- '@typespec/openapi3'
+- "@typespec/openapi3"
+
+linter:
+  extends:
+    - "@contoso/typespec-library/recommended"

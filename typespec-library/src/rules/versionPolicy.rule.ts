@@ -19,9 +19,10 @@ export const versionPolicyRule = createRule({
       // This is called for every operation
       operation: (op) => {
         const params = op.parameters?.properties;
-        if (![...params.values()].some((p) => isApiVersion(p) && isQueryParam(context.program, p))) {
+        if (
+          ![...params.values()].some((p) => isApiVersion(p) && isQueryParam(context.program, p))
+        ) {
           context.reportDiagnostic({
-            code: "version-policy",
             target: op,
           });
         }

@@ -8,7 +8,7 @@ export const myLibrary = createTypeSpecLibrary({
     rules: [versionPolicyRule],
     ruleSets: {
       recommended: {
-        enable: { [`@contoso/typespec-library:${versionPolicyRule.name}`]: true },
+        enable: { [`@contoso/typespec-library/${versionPolicyRule.name}`]: true },
       },
     },
   },
