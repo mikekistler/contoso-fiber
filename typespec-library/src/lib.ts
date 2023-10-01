@@ -1,7 +1,7 @@
 import { createTypeSpecLibrary } from "@typespec/compiler";
 import { versionPolicyRule } from "./rules/versionPolicy.rule.js";
 
-export const myLibrary = createTypeSpecLibrary({
+export const $lib = createTypeSpecLibrary({
   name: "@contoso/typespec-library",
   diagnostics: {},
   linter: {
@@ -15,4 +15,4 @@ export const myLibrary = createTypeSpecLibrary({
 });
 
 // optional but convenient
-export const { reportDiagnostic, createDiagnostic, createStateSymbol } = myLibrary;
+export const { reportDiagnostic, createDiagnostic, createStateSymbol } = $lib;
