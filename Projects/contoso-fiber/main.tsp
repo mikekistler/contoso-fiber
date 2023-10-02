@@ -161,8 +161,15 @@ namespace ServiceTickets {
 @tag("Guides")
 @route("/guides")
 namespace Guides {
-  //op getGuide is read<Guide>;
   @added(Versions.`2023-11-30`)
   op listGuides is list<Guide, Top & Skip & Filter>;
-  @post op get(): string;
+  @added(Versions.`2023-11-30`)
+  op getGuide is read<Guide>;
+}
+
+@tag("Status")
+@route("/status")
+namespace Status {
+  #suppress "@contoso/typespec-library/version-policy" "getStatus does not follow version policy"
+  op getStatus(): string;
 }

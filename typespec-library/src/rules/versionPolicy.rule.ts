@@ -9,7 +9,7 @@ const isApiVersion = (p: ModelProperty) => {
 
 export const versionPolicyRule = createRule({
   name: "version-policy",
-  severity: "warning",
+  severity: "warning", // "Warning" is the only valid value
   description: `All operations must define an "api-version" query parameter.`,
   messages: {
     default: `Operation does not define an "api-version" query parameter.`,
